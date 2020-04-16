@@ -408,7 +408,7 @@ local function WOverlay()
             }
         ]])
     end
-    if wo_g == nil or wg_old_r ~= gr or wg_old_b ~= gb or wg_old_g ~= gb or wg_old_glow ~= glow then
+    if wo_g == nil or wg_old_r ~= gr or wg_old_g ~= gg or wg_old_b ~= gb or wg_old_glow ~= glow then
         wo_g = materials.Create("aw_vm_hands_glow",
         [[
             VertexLitGeneric
