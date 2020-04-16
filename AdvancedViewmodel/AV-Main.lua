@@ -159,7 +159,7 @@ local function HOverlay()
             }
         ]])
     end
-    if ho_g == nil or hg_old_r ~= gr or hg_old_b ~= gb or hg_old_g ~= gb or hg_old_glow ~= glow then
+    if ho_g == nil or hg_old_r ~= gr or hg_old_g ~= gg or hg_old_b ~= gb or hg_old_glow ~= glow then
         ho_g = materials.Create("aw_vm_hands_glow",
         [[
             VertexLitGeneric
@@ -408,7 +408,7 @@ local function WOverlay()
             }
         ]])
     end
-    if wo_g == nil or wg_old_r ~= gr or wg_old_b ~= gb or wg_old_g ~= gb or wg_old_glow ~= glow then
+    if wo_g == nil or wg_old_r ~= gr or wg_old_g ~= gg or wg_old_b ~= gb or wg_old_glow ~= glow then
         wo_g = materials.Create("aw_vm_hands_glow",
         [[
             VertexLitGeneric
