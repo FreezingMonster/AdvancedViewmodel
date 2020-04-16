@@ -104,14 +104,14 @@ local function IOnDraw()
 	                $translucent 1
 	                $alpha 0.4
 	                $envmap		models\effects\crystal_cube_vertigo_hdr
-	                $envmaptint "[]] .. wr/255 .. " " .. wg/255 .. " " .. wb/255 ..[[]"
+	                $envmaptint "[]] .. r/255 .. " " .. g/255 .. " " .. b/255 ..[[]"
 	                //$envmaptint "[0.8 1.2 1.5]"
 	                //$envmapcontrast 1.2
 	                $envmapsaturation 0.1
 	                $envmapfresnel 0
 	                $phong 1
 	                $phongexponent 16
-	                $phongtint "[]].. wr/255 .. " " .. wg/255 .. " " .. wb/255 ..[[]"
+	                $phongtint "[]].. r/255 .. " " .. g/255 .. " " .. b/255 ..[[]"
 	                $phongboost 2
                     //$nocull 1
                     $ignorez 1
@@ -290,14 +290,14 @@ local function OnDraw()
 	                $translucent 1
 	                $alpha 0.4
 	                $envmap		models\effects\crystal_cube_vertigo_hdr
-	                $envmaptint "[]] .. wr/255 .. " " .. wg/255 .. " " .. wb/255 ..[[]"
+	                $envmaptint "[]] .. r/255 .. " " .. g/255 .. " " .. b/255 ..[[]"
 	                //$envmaptint "[0.8 1.2 1.5]"
 	                //$envmapcontrast 1.2
 	                $envmapsaturation 0.1
 	                $envmapfresnel 0
 	                $phong 1
 	                $phongexponent 16
-	                $phongtint "[]].. wr/255 .. " " .. wg/255 .. " " .. wb/255 ..[[]"
+	                $phongtint "[]].. r/255 .. " " .. g/255 .. " " .. b/255 ..[[]"
 	                $phongboost 2
 	                //$nocull 1
                 }
@@ -325,7 +325,7 @@ local function Overlay()
             }
         ]])
     end
-    if o_g == nil or g_old_r ~= gr or g_old_b ~= gb or g_old_g ~= gb or g_old_glow ~= glow then
+    if o_g == nil or g_old_r ~= gr or g_old_g ~= gg or g_old_b ~= gb or g_old_glow ~= glow then
         o_g = materials.Create("aw_vm_teammate_glow",
         [[
             VertexLitGeneric
