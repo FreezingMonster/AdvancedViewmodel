@@ -159,7 +159,7 @@ local function HOverlay()
             }
         ]])
     end
-    if ho_g == nil or hg_old_r ~= gr or hg_old_b ~= gb or hg_old_g ~= gb or hg_old_glow ~= glow then
+    if ho_g == nil or hg_old_r ~= gr or hg_old_g ~= gg or hg_old_b ~= gb or hg_old_glow ~= glow then
         ho_g = materials.Create("aw_vm_hands_glow",
         [[
             VertexLitGeneric
